@@ -5,16 +5,18 @@ var gulp = require('gulp'),
     cleanCSS = require('gulp-clean-css'),  // сжимает, оптимизирует
     jade = require('gulp-jade'),
     watch = require('gulp-watch'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    mainBowerFiles = require('main-bower-files');
+
 
 
 gulp.task('less', function () {
-  gulp.src('../less/*.less')
+  gulp.src('../less/style.less')
     .pipe(less())
     .pipe(concat('style.css'))
-    .pipe(cleanCSS({compatibility: 'ie8'}))   
+    .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['> 0.5%','last 10 versions'],
             cascade: false
         }))
     .pipe(gulp.dest('../css'))
@@ -33,7 +35,7 @@ gulp.task('jade', function () {
 gulp.task('connect', function () {
   connect.server({
     port: 8080,
-    root: '../html',
+    root: '../',
     livereload: true
   });
 });
@@ -41,7 +43,7 @@ gulp.task('connect', function () {
 
 gulp.task('watch', function () {
 
-  gulp.watch(['../less/*.less'], ['less']);
+  gulp.watch(['../less/**/*.less'], ['less']);
   gulp.watch(['../jade/**/*.jade'], ['jade']);
 
 });

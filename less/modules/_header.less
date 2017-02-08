@@ -1,0 +1,75 @@
+.header {
+.clearfix();
+padding: 40px 0 32px 0;
+border-bottom: 2px solid #eeeeee;
+
+.header-wrap {
+  display: table;
+
+  .social {
+    display: table-cell;
+    padding-top: 3px;
+
+    &__link {
+      margin-right: 6px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .logo {
+    width: 69%;
+    display: table-cell;
+    text-align: center;
+
+    &__text{
+      color: #9c9c9c;
+      font-family: Ubuntu, sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 27px;
+    }
+
+    &__img {
+      display: block;
+      margin-bottom: 22px;
+    }
+  }
+
+  .callback {
+    display: table-cell;
+    text-align: right;
+
+    .tel-number {
+      color: #b8907b;
+      font-family: Ubuntu;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 27px;
+      text-transform: uppercase;
+    }
+
+    a {
+      position: relative;
+      color: #485368;
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0px;
+        left: -30px;
+        background: url('../img/icon-phone.svg') no-repeat;
+      }
+    }
+  }
+
+}
+}
