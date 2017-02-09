@@ -1,88 +1,75 @@
 .footer {
     @include clearfix();
-    background: #313131;
-    height: 292px;
-    
-    .social-btn {
+    background: #485368;
+    height: 280px;
+
+    .footer-info {
+       display: block;
+       padding-top: 80px;
+       margin-bottom: 73px;
+
+       &__social {
         display: inline-block;
-        margin-left: 30px;
-        margin-top: 83px;
-        
-        
-        .social-link {
-            display: inline-block;
-            margin-right: 6px;
-            
-            &:last-child {
-                margin-right: 0px;
-            }
-        }
-    }
-    
-    .footer__nav {
-        display: inline-block;
-        float: right;
-        width: 65%;
-        margin-top: 76px;
-        
-        p {
-            margin: 0;
-            padding: 0;
-        }
-        
-        .about {
-        display: inline-block;
-        width: 37.5%;
+        width: 34%;
         vertical-align: top;
-        
-        }
-
-        .docs {
-            display: inline-block;
-            width: 37.5%;
-            vertical-align: top;
-        }
-
-        .other {
-            display: inline-block;
-            width: 22%;
-            vertical-align: top;
-        }
+      }
     }
-    
-    
-    
-    .footer-link {
+
+    .footer-nav {
+      display: inline-block;
+      width: 65%;
+      vertical-align: top;
+
+      .footer-column {
         display: inline-block;
-        text-decoration: none;
-        color: darken($nav-color, 30%);
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 24px;
-        
-        &:hover {
-            color: $nav-color;
-        }
-    }
-    
-    .footer-delimetr {
-        margin-top: -71px;
-        height: 2px;
-        background-color: #434343;
-        margin-bottom: 24px;
-    }
-    
-    
-}
+        vertical-align: top;
+      }
 
-.copyright {
-        max-width: 1170px;
-        margin: 0 auto;
-    padding-left: 30px;
-        color: #797979;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 24px;
+      .footer-column1,
+      .footer-column2 {
+         width: 40%;
+      }
+
+        .footer-link {
+          color: #ffffff;
+          font-family: Ubuntu;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+
+          &:active,
+          &:hover,
+          &:focus {
+            color: darken(#fff, 40%);
+          }
+        }
+      }
+
+      .about {
+        display: flex;;
+        justify-content: space-between;
+
+        .copyright {
+          color: #b4bbca;
+          font-family: Ubuntu,sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+        }
+
+        .addr {
+          color: #b4bbca;
+          font-family: Ubuntu,sans-serif;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 24px;
+        }
+
+        .idpowers {
+
+          opacity: 0.25;
+        }
+      }
+
+
     }

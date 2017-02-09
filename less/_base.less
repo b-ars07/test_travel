@@ -31,7 +31,8 @@ html {
     }
 }
 
-.footer, .page-wrap:after {
+.footer,
+.page-wrap:after {
     height: 280px;
 }
 
@@ -74,17 +75,43 @@ a {
 
 .btn {
   border: 2px solid #485368;
-  border-radius: 20px;
+  border-radius: 30px;
   background: transparent;
   padding: 11px 34px;
   color: #485368;
-  font-family: Ubuntu;
+  font-family: Ubuntu,sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
 
   &:hover {
     color: lighten(#485368, 30%);
+  }
+}
+
+.btn-primary {
+  &:hover {
     border-color: lighten(#485368, 30%);
+  }
+}
+
+.btn-news {
+  border: 2px solid #ffffff;
+  background-color: #f5f5f5;
+
+  &:hover {
+    border-color: #485368;
+  }
+}
+
+.social {
+  padding-top: 3px;
+
+  &__link {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
