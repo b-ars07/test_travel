@@ -1,30 +1,41 @@
 extends includes/_base.jade
 block content
   .slider
-    ul.bxslider
-      li
-        img(src="../img/pic1.png")
-      li
-        img(src="../img/pic1.jpg")
-      li
-        img(src="../img/pic1.png")   
-      li
-        img(src="../img/pic1.jpg")
+    .swiper-container.first-slider
+      .swiper-wrapper
+        .swiper-slide 
+          img(src="../img/pic1.png")
+        .swiper-slide 
+          img(src="../img/pic1.jpg")
+        .swiper-slide 
+          img(src="../img/pic1.png")          
+        .swiper-slide 
+          img(src="../img/pic1.jpg")           
+        
+      // Add Arrows
+      .swiper-button-next
+      |         
+      .swiper-button-prev
   .intro
-    .carousel
-      .slider1
-        .slide
-          img(src="../img/car1.png")
-        .slide
-          img(src="../img/car2.png")
-        .slide
-          img(src="../img/car3.png")
-        .slide
-          img(src='http://placehold.it/350x234&text=FooBar4')
-        .slide
-          img(src='http://placehold.it/350x234&text=FooBar5')
-        .slide
-          img(src='http://placehold.it/350x234&text=FooBar6')
+    .wrapper
+      .carousel
+        .swiper-container.slider1
+          .swiper-wrapper
+            .swiper-slide
+              img(src="../img/car1.png")
+            .swiper-slide
+              img(src="../img/car2.png")
+            .swiper-slide
+              img(src="../img/car3.png")
+            .swiper-slide
+              img(src='http://placehold.it/350x234&text=FooBar4')
+            .swiper-slide
+              img(src='http://placehold.it/350x234&text=FooBar5')
+            .swiper-slide
+              img(src='http://placehold.it/350x234&text=FooBar6')
+          .swiper-button-next
+          |         
+          .swiper-button-prev
   .wrapper
     include includes/_submenu.jade
     .info

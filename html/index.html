@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/jquery.bxslider.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
     <script src="../js/main.js"></script>
   </head>
 </html>
@@ -41,22 +41,33 @@
       </div>
     </nav>
     <div class="slider">
-      <ul class="bxslider">
-        <li><img src="../img/pic1.png"></li>
-        <li><img src="../img/pic1.jpg"></li>
-        <li><img src="../img/pic1.png"></li>
-        <li><img src="../img/pic1.jpg"></li>
-      </ul>
+      <div class="swiper-container first-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> <img src="../img/pic1.png"></div>
+          <div class="swiper-slide"> <img src="../img/pic1.jpg"></div>
+          <div class="swiper-slide"> <img src="../img/pic1.png"></div>
+          <div class="swiper-slide"> <img src="../img/pic1.jpg"></div>
+        </div>
+        <!-- Add Arrows-->
+        <div class="swiper-button-next"></div>        
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
     <div class="intro">
-      <div class="carousel">
-        <div class="slider1">
-          <div class="slide"><img src="../img/car1.png"></div>
-          <div class="slide"><img src="../img/car2.png"></div>
-          <div class="slide"><img src="../img/car3.png"></div>
-          <div class="slide"><img src="http://placehold.it/350x234&amp;text=FooBar4"></div>
-          <div class="slide"><img src="http://placehold.it/350x234&amp;text=FooBar5"></div>
-          <div class="slide"><img src="http://placehold.it/350x234&amp;text=FooBar6"></div>
+      <div class="wrapper">
+        <div class="carousel">
+          <div class="swiper-container slider1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../img/car1.png"></div>
+              <div class="swiper-slide"><img src="../img/car2.png"></div>
+              <div class="swiper-slide"><img src="../img/car3.png"></div>
+              <div class="swiper-slide"><img src="http://placehold.it/350x234&amp;text=FooBar4"></div>
+              <div class="swiper-slide"><img src="http://placehold.it/350x234&amp;text=FooBar5"></div>
+              <div class="swiper-slide"><img src="http://placehold.it/350x234&amp;text=FooBar6"></div>
+            </div>
+            <div class="swiper-button-next"></div>        
+            <div class="swiper-button-prev"></div>
+          </div>
         </div>
       </div>
     </div>
