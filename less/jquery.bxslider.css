@@ -16,7 +16,7 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 auto;
 	padding: 0;
 	*zoom: 1;
 }
@@ -34,7 +34,7 @@
 	-webkit-box-shadow: 0 0 5px #ccc;
 	box-shadow: 0 0 5px #ccc;
 	/*border:  5px solid #fff;*/
-	background: #fff;
+	background: transparent;
 
 	/*fix other elements on the page moving (on Chrome)*/
 	-webkit-transform: translatez(0);
@@ -73,6 +73,7 @@
 	font-weight: bold;
 	color: #666;
 	padding-top: 20px;
+	display: none;
 }
 
 .bx-wrapper .bx-pager .bx-pager-item,
@@ -103,12 +104,12 @@
 /* DIRECTION CONTROLS (NEXT / PREV) */
 
 .bx-wrapper .bx-prev {
-	left: 300px;
+	left: 12%;
 	background: url(../img/controls-left.svg) no-repeat;
 }
 
 .bx-wrapper .bx-next {
-	right: 300px;
+	right: 12%;
 	background: url(../img/controls-right.svg) no-repeat;
 }
 

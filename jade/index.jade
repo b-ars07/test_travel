@@ -3,11 +3,40 @@ block content
   .slider
     ul.bxslider
       li
+        img(src="../img/pic1.png")
+      li
         img(src="../img/pic1.jpg")
       li
-        img(src="../img/pic2.jpg")
+        img(src="../img/pic1.png")   
       li
-        img(src="../img/pic3.jpg")   
-      li
-        img(src="../img/pic4.jpg")
-    
+        img(src="../img/pic1.jpg")
+  .intro
+    .carousel
+      .slider1
+        .slide
+          img(src="../img/car1.png")
+        .slide
+          img(src="../img/car2.png")
+        .slide
+          img(src="../img/car3.png")
+        .slide
+          img(src='http://placehold.it/350x234&text=FooBar4')
+        .slide
+          img(src='http://placehold.it/350x234&text=FooBar5')
+        .slide
+          img(src='http://placehold.it/350x234&text=FooBar6')
+  .wrapper
+    include includes/_submenu.jade
+    .info
+      .article
+        .article__title  Travel
+        .article__description 
+          .article__description_brief 
+            |Новая Зеландия – ни что иное, как миниатюрная проекция нашего земного  шара, крохотные острова в юго-западной части Океании... Это место уже стало культовым среди туристов, бегущих от суеты мегаполисов. Новая Зеландия на своей небольшой территории помещает весь колорит планеты. 
+          .article__description_full 
+            |Здесь вы найдете бескрайние пляжи, традиционные деревушки, горные долины и большие города, тесно находящиеся друг с другом.
+        .article__button
+          a.btn.btn-primary(href="#") Подробнее
+      .info__img
+        img(src="../img/article.png", alt="alt")
+        
