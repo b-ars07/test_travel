@@ -6,15 +6,25 @@ var gulp = require('gulp'),
     jade = require('gulp-jade'),
     watch = require('gulp-watch'),
     connect = require('gulp-connect'),
+    postcss = require('gulp-postcss'),
     mainBowerFiles = require('main-bower-files');
 
+var atImport = require('postcss-import');
+var mqpacker = require('css-mqpacker');
+var cssnano = require('cssnano');
 
+var processors = [
+    atImport,
+    mqpacker,
+    cssnano
+];
 
 gulp.task('less', function () {
   gulp.src('../less/style.less')
     .pipe(less())
+    .pipe(postcss(processors))
     .pipe(concat('style.css'))
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+    // .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(autoprefixer({
             browsers: ['> 0.5%','last 10 versions'],
             cascade: false

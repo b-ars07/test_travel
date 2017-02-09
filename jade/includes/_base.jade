@@ -7,10 +7,12 @@ html(lang="ru")
     link(rel="stylesheet", href="../css/style.css")
     title Document
     script(src='http://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
+    script(src="../js/main.js")
+    script(src="../js/jquery.bxslider.min.js")
     
 body
   include _header.jade
   .page-wrap
     include _nav.jade
-      block content
-      include _footer.jade
+    block content
+    include _footer.jade
