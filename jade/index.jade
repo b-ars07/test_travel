@@ -3,18 +3,17 @@ block content
   .slider
     .swiper-container.first-slider
       .swiper-wrapper
-        .swiper-slide 
+        .swiper-slide
           img(src="../img/pic1.png")
-        .swiper-slide 
+        .swiper-slide
           img(src="../img/pic1.jpg")
-        .swiper-slide 
-          img(src="../img/pic1.png")          
-        .swiper-slide 
-          img(src="../img/pic1.jpg")           
-        
+        .swiper-slide
+          img(src="../img/pic1.png")
+        .swiper-slide
+          img(src="../img/pic1.jpg")
+
       // Add Arrows
       .swiper-button-next
-      |         
       .swiper-button-prev
   .intro
     .wrapper
@@ -22,29 +21,59 @@ block content
         .swiper-container.slider1
           .swiper-wrapper
             .swiper-slide
-              img(src="../img/car1.png")
+              .grid
+                figure.effect-ming
+                  img(src="../img/car1.png")
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
             .swiper-slide
-              img(src="../img/car2.png")
+              .grid
+                figure.effect-ming
+                  img(src="../img/car2.png")
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
+
             .swiper-slide
-              img(src="../img/car3.png")
+              .grid
+                figure.effect-ming
+                  img(src="../img/car3.png")
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
             .swiper-slide
-              img(src='http://placehold.it/350x234&text=FooBar4')
+              .grid
+                figure.effect-ming
+                  img(src='http://placehold.it/350x234&text=FooBar4')
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
             .swiper-slide
-              img(src='http://placehold.it/350x234&text=FooBar5')
+              .grid
+                figure.effect-ming
+                  img(src='http://placehold.it/350x234&text=FooBar5')
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
             .swiper-slide
-              img(src='http://placehold.it/350x234&text=FooBar6')
+              .grid
+                figure.effect-ming
+                  img(src='http://placehold.it/350x234&text=FooBar6')
+                  figcaption
+                    p Парусный спорт в Стокгольме! Тебе понравится это!
+                    a(href="#")
           .swiper-button-next
-          |         
           .swiper-button-prev
   .wrapper
     include includes/_submenu.jade
     .info
       .article
         .article__title  Travel
-        .article__description 
-          .article__description_brief 
-            |Новая Зеландия – ни что иное, как миниатюрная проекция нашего земного  шара, крохотные острова в юго-западной части Океании... Это место уже стало культовым среди туристов, бегущих от суеты мегаполисов. Новая Зеландия на своей небольшой территории помещает весь колорит планеты. 
-          .article__description_full 
+        .article__description
+          .article__description_brief
+            |Новая Зеландия – ни что иное, как миниатюрная проекция нашего земного  шара, крохотные острова в юго-западной части Океании... Это место уже стало культовым среди туристов, бегущих от суеты мегаполисов. Новая Зеландия на своей небольшой территории помещает весь колорит планеты.
+          .article__description_full
             |Здесь вы найдете бескрайние пляжи, традиционные деревушки, горные долины и большие города, тесно находящиеся друг с другом.
         .article__button
           a.btn.btn-primary(href="#") Подробнее
@@ -60,7 +89,7 @@ block content
             span.date 03.02.2017
             a.news__title(href="#") Новая Зеландия - потерянный рай
         li.news__item
-          img(src="../img/news2.png", alt="") 
+          img(src="../img/news2.png", alt="")
           .news__info
             span.date 03.02.2017
             a.news__title(href="#") Парусный спорт в Стокгольме! Тебе понравится это!

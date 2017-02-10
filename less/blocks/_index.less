@@ -23,7 +23,7 @@
     }
 
     .swiper-button-next {
-      right: 10px!important;
+      right: 16px!important;
     }
   }
 }
@@ -116,10 +116,13 @@
 
   &__list {
     border: 2px solid #ffffff;
-    padding: 34px 68px 47px 30px;
+    padding: 34px 50px 47px 30px;
     display: flex;
     flex-flow: wrap;
-    justify-content: space-between;
+    width: 99%;
+    margin-left: 1px;
+
+
 
     .news-title {
       flex: 1 1 100%;
@@ -129,11 +132,19 @@
       font-weight: 500;
       line-height: 27px;
       text-transform: uppercase;
-      margin-bottom: 27px;
+      margin-bottom: 25px;
     }
   }
 
   &__item {
+    &:nth-child(2) {
+      margin-right: 61px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 95px;
+    }
+
      img {
        display: inline-block;
        margin-right: 15px;
@@ -162,6 +173,7 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
+    transition: color .3s ease-in-out;
 
     &:hover {
       color: #b8907b;
@@ -173,4 +185,157 @@
     text-align: center;
     margin-top: -12px;
   }
+}
+
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	min-width: 350px;
+  max-width: 350px;
+	max-height: 234px;
+	width: 48%;
+	height: auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 95px 68px;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+  color: #ffffff;
+  font-family: Ubuntu,sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 21px;
+  letter-spacing: 1px;
+}
+
+
+/*---------------*/
+/***** Ming *****/
+/*---------------*/
+
+figure.effect-ming {
+	background: #030c17;
+}
+
+figure.effect-ming img {
+	opacity: 0.9;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-ming figcaption::before {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	bottom: 15px;
+	left: 15px;
+	border: 2px solid #fff;
+	box-shadow: 0 0 0 30px rgba(255,255,255,0.2);
+	content: '';
+	opacity: 0.5;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(1.4,1.4,1);
+	transform: scale3d(1.4,1.4,1);
+}
+
+figure.effect-ming h2 {
+	margin: 20% 0 10px 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-ming p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+
+}
+
+figure.effect-ming:hover h2 {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+figure.effect-ming:hover figcaption::before,
+figure.effect-ming:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+figure.effect-ming:hover figcaption {
+	// background-color: rgba(58,52,42,0);
+}
+
+figure.effect-ming:hover img {
+	opacity: 0.4;
 }
