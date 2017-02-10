@@ -3,7 +3,7 @@
 
   &:before {
     content: "";
-    top: 0px;
+    top: -4px;
     left: 0px;
     position: absolute;
     width: 100%;
@@ -15,7 +15,7 @@
   .carousel {
     padding-top: 30px;
     margin: 0 auto;
-    margin-bottom: 99px;
+    margin-bottom: 102px;
     //width: 60%;
 
     .swiper-button-prev {
@@ -31,7 +31,8 @@
 .info {
   .article {
     display: inline-block;
-    width: 47%;
+    width: 48%;
+    margin-top: -10px;
     margin-bottom: 104px;
 
     &__title {
@@ -40,9 +41,11 @@
       font-family: Ubuntu,sans-serif;
       font-size: 48px;
       font-weight: 500;
-      line-height: 27px;
+      line-height: 46px;
       text-transform: uppercase;
-      margin-bottom: 69px;
+      margin-bottom: 17px;
+      height: 88px;
+      overflow-y: hidden;
 
       &:after {
         content: "";
@@ -50,7 +53,7 @@
         width: 30px;
         height: 2px;
         background-color: #b8907b;
-        bottom: -37px;
+        bottom: 16px;
         left: 0px;
       }
     }
@@ -61,7 +64,7 @@
       font-weight: 300;
       line-height: 26px;
       margin-bottom: 40px;
-      letter-spacing: -0.27px;
+      letter-spacing: -0.25px;
 
       &_brief {
          color: #273137;
@@ -70,6 +73,7 @@
 
       &_full {
         color: #9c9c9c;
+        letter-spacing: -0.2px;
       }
     }
 
@@ -133,6 +137,8 @@
       line-height: 27px;
       text-transform: uppercase;
       margin-bottom: 25px;
+      max-width: 815px;
+      overflow: hidden;
     }
   }
 
@@ -166,7 +172,7 @@
   &__title {
     display: inline-block;
     max-width: 200px;
-    max-height: 50px;
+    max-height: 65px;
     overflow:hidden;
     color: #485368;
     font-family: Ubuntu,sans-serif;;
@@ -201,10 +207,10 @@
 	position: relative;
 	float: left;
 	overflow: hidden;
-	min-width: 350px;
+	min-width: 200px;
   max-width: 350px;
 	max-height: 234px;
-	width: 48%;
+	width: 100%;
 	height: auto;
 	background: #3085a3;
 	text-align: center;
@@ -220,7 +226,7 @@
 }
 
 .grid figure figcaption {
-	padding: 95px 68px;
+	padding: 95px 62px 0 62px;
 	color: #fff;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -268,7 +274,7 @@
 .grid figure p {
   color: #ffffff;
   font-family: Ubuntu,sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 100;
   line-height: 21px;
   letter-spacing: 1px;

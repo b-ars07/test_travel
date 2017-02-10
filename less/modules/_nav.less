@@ -6,12 +6,16 @@
     display: flex;
     padding: 5px;
     font-size: 0;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   &__item {
-    display: inline-block;
-    margin-right: 13px;
+    flex-grow: 0;
+    margin-right: 70px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .link {
@@ -23,6 +27,8 @@
     font-size: 18px;
     font-weight: 300;
     text-transform: uppercase;
+    max-width: 345px;
+    overflow: hidden;
     transition: color .3s ease-in-out;
 
     &:active,

@@ -9,7 +9,7 @@
        margin-bottom: 65px;
 
        &__social {
-        display: inline-block;
+        display: inline-flex;
         width: 34%;
         vertical-align: top;
       }
@@ -60,6 +60,9 @@
           font-weight: 300;
           line-height: 24px;
           letter-spacing: 0.2px;
+          max-width: 22%;
+          overflow: hidden;
+          max-height: 50px;
         }
 
         .addr {
@@ -71,11 +74,27 @@
           line-height: 24px;
           letter-spacing: 0.2px;
           padding-left: 3px;
+          max-width: 50%;
+          overflow: hidden;
+          max-height: 50px;
         }
 
         .idpowers {
+          position: relative;
           padding-right: 8px;
           opacity: 0.25;
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            opacity: 0.5;
+            top: 0px;
+            left: 5px;
+            background: url('../img/dot.svg') no-repeat;
+            background-size: 9px;
+          }
         }
       }
 

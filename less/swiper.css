@@ -139,7 +139,7 @@
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
   background-image: url("../img/controls-left.svg");
-  left: 317px;
+  left: 12%;
   right: auto;
 }
 .swiper-button-prev.swiper-button-black,
@@ -153,7 +153,7 @@
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
   background-image: url("../img/controls-right.svg");
-  right: 317px;
+  right: 12%;
   left: auto;
 }
 .swiper-button-next.swiper-button-black,

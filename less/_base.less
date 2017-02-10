@@ -110,14 +110,51 @@ a {
 }
 
 .social {
+  display: flex;
   padding-top: 3px;
 
   &__link {
     margin-right: 6px;
+    width: 36px;
+    height: 36px;
+
+    &_yellow {
+      background-color: #d6ae9a;
+    }
+
+    &_gray {
+      background-color: #667085;
+    }
+
+
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__vk {
+    background-image: url('../img/vk.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__fb {
+    background-image: url('../img/fb.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__tw {
+    background-image: url('../img/tw.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__ok {
+    background-image: url('../img/ok.png');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -130,4 +167,18 @@ a {
     .swiper-slide {
       background-position: center;
       background-size: cover;
+
+      /* Center slide text vertically */
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       -webkit-justify-content: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       -webkit-align-items: center;
+       align-items: center;
     }
