@@ -6,16 +6,36 @@
     display: flex;
     padding: 5px;
     font-size: 0;
-    justify-content: flex-start;
   }
 
   &__item {
-    flex-grow: 0;
-    margin-right: 70px;
+      margin-right: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      
+      &_empty {
+          width: 0px;
+    &:firs-child {
+      padding-left: 0;      
+    }
 
     &:last-child {
       margin-right: 0;
     }
+      
+    &:last-child:nth-child(4) {
+          width: 100%;
+    }
+      
+    &:last-child:nth-child(3) {
+          width: 100%;
+    }
+    &:last-child:nth-child(2) {
+          width: 100%;
+    }  
+      }
+      
+    
   }
 
   .link {
@@ -38,3 +58,5 @@
     }
   }
 }
+
+
