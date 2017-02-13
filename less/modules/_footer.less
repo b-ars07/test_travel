@@ -2,101 +2,87 @@
     @include clearfix();
     background: #485368;
     height: 280px;
-
     .footer-info {
-       display: block;
-       padding-top: 78px;
-       margin-bottom: 65px;
-
-       &__social {
-        display: inline-flex;
-        width: 34%;
-        vertical-align: top;
-      }
-    }
-
-    .footer-nav {
-      display: inline-block;
-      width: 61.6%;
-      vertical-align: top;
-      margin-top: -5px;
-      margin-left: -4px;
-
-      .footer-column {
-        display: inline-block;
-        vertical-align: top;
-      }
-
-      .footer-column1,
-      .footer-column2 {
-         width: 40.7%;
-      }
-
-        .footer-link {
-          color: #ffffff;
-          font-family: Ubuntu;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 24px;
-
-          &:active,
-          &:hover,
-          &:focus {
-            color: darken(#fff, 40%);
-          }
+        display: block;
+        padding-top: 79px;
+        margin-bottom: 65px;
+        &__social {
+            display: inline-flex;
+            width: 34%;
+            vertical-align: top;
         }
-      }
-
-      .about {
-        display: flex;;
+    }
+    .footer-nav {
+        display: inline-block;
+        width: 61.6%;
+        vertical-align: top;
+        margin-top: -5px;
+        margin-left: -4px;
+        .footer-column {
+            display: inline-block;
+            vertical-align: top;
+        }
+        .footer-column1,
+        .footer-column2 {
+            width: 40.7%;
+        }
+        .footer-link {
+            color: #ffffff;
+            font-family: Ubuntu;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            &:active,
+            &:hover,
+            &:focus {
+                color: darken(#fff, 40%);
+            }
+        }
+    }
+    .about {
+        display: flex;
+        ;
         justify-content: space-between;
         padding-top: 1px;
-
-
         .copyright {
-          color: #b4bbca;
-          font-family: Ubuntu,sans-serif;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 24px;
-          letter-spacing: 0.2px;
-          max-width: 22%;
-          overflow: hidden;
-          max-height: 50px;
+            color: #b4bbca;
+            font-family: Ubuntu, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 27px;
+            letter-spacing: 0.2px;
+            max-width: 22%;
+            overflow: hidden;
+            max-height: 50px;
         }
-
         .addr {
-          flex-basis: 38%;
-          color: #b4bbca;
-          font-family: Ubuntu,sans-serif;
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 24px;
-          letter-spacing: 0.2px;
-          padding-left: 3px;
-          max-width: 50%;
-          overflow: hidden;
-          max-height: 50px;
+            flex-basis: 38%;
+            color: #b4bbca;
+            font-family: Ubuntu, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 27px;
+            letter-spacing: 0.2px;
+            padding-left: 3px;
+            max-width: 50%;
+            overflow: hidden;
+            max-height: 50px;
         }
-
         .idpowers {
-          position: relative;
-          padding-right: 8px;
-          opacity: 0.25;
-
-          &:before {
-            content: "";
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            opacity: 0.5;
-            top: 0px;
-            left: 5px;
-            background: url('../img/dot.svg') no-repeat;
-            background-size: 9px;
-          }
+            position: relative;
+            padding-right: 8px;
+            opacity: 0.25;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                opacity: 0.5;
+                top: 0px;
+                left: 5px;
+                background: url('../img/dot.svg') no-repeat;
+                background-size: 9px;
+            }
         }
-      }
-
-
     }
+}

@@ -1,0 +1,97 @@
+@media (max-width: 1160px) {
+    .news {
+        &__list {
+            border: 2px solid #ffffff;
+            padding: 34px 0px 70px 30px;
+            display: flex;
+            flex-flow: wrap;
+            width: 99%;
+            margin-left: 1px;
+        }
+        &__item {
+            &:nth-child(2) {
+                margin-right: 30px;
+            }
+            &:nth-child(3) {
+                margin-right: 80px;
+            }
+        }
+        &__title {
+            display: inline-block;
+            max-width: 200px;
+            max-height: 80px;
+            overflow: hidden;
+            color: #485368;
+            font-family: Ubuntu, sans-serif;
+            ;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            transition: color .3s ease-in-out;
+        }
+    }
+}
+@media (max-width: 1060px) {
+    .slider-info {
+        top: 34.8%;
+    }
+    .news {
+        &__list {
+            padding: 34px 0px 70px 30px;
+        }
+        &__item {
+            &:nth-child(2) {
+                margin-right: 0px;
+            }
+            &:nth-child(3) {
+                margin-right: 0px;
+            }
+        }
+        &__title {
+            max-width: 177px;
+            max-height: 80px;
+        }
+    }
+}
+@media (max-width: 960px) {
+    wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    .header {
+        height: 60px;
+        padding-top: 20px;
+        &__social {
+            display: none;
+        }
+        .callback {
+            display: none;
+        }
+        .hamburger {
+            display: inline-block;
+            padding: 0;
+            vertical-align: top;
+            width: 10%;
+            .hamburger-box {
+                height: 0;
+            }
+        }
+        .logo {
+            display: inline-block;
+            margin: 0 auto;
+            width: 70%;
+            text-align: center;
+            &__text {
+                display: none;
+            }
+            &__img {
+                &_desktop {
+                    display: none;
+                }
+                &_tablet {
+                    display: block!important;
+                }
+            }
+        }
+    }
+}

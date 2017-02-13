@@ -1,78 +1,75 @@
 .header {
-.clearfix();
-padding: 40px 0 27px 0;
-border-bottom: 2px solid #eeeeee;
-
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-
-
-
-  .logo {
-    padding-left: 12px;
-    text-align: center;
-
-    &__text {
-      color: #9c9c9c;
-      font-family: Ubuntu, sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 27px;
-      max-width: 710px;
-      overflow: hidden;
-      max-height: 28px;
+    .clearfix();
+    padding: 40px 0 27px 0;
+    border-bottom: 2px solid #eeeeee;
+    .hamburger {
+        display: none;
     }
-
-    &__img {
-      display: block;
-      margin-bottom: 10px;
+    .header-wrap {
+        display: flex;
+        justify-content: space-between;
+        .logo {
+            padding-left: 12px;
+            text-align: center;
+            &__text {
+                color: #9c9c9c;
+                font-family: Ubuntu, sans-serif;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 27px;
+                max-width: 710px;
+                overflow: hidden;
+                max-height: 28px;
+            }
+            &__img {
+                display: block;
+                margin-bottom: 10px;
+                &_tablet {
+                    display: none;
+                }
+            }
+        }
+        .callback {
+            padding-top: 5px;
+            padding-right: 12px;
+            text-align: right;
+            .tel-number {
+                color: #b8907b;
+                font-family: Ubuntu;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 35px;
+                text-transform: uppercase;
+                max-width: 180px;
+                max-height: 40px;
+                overflow: hidden;
+            }
+            .phone-icon {
+                display: none;
+            }
+            a {
+                position: relative;
+                color: #485368;
+                font-family: Ubuntu;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 35px;
+                transition: color .3s ease-in-out;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 22px;
+                    top: 0px;
+                    left: -30px;
+                    background: url('../img/icon-phone.svg') no-repeat;
+                }
+                &:hover,
+                &:active,
+                &:focus {
+                    color: #a07762;
+                }
+            }
+        }
     }
-  }
-
-  .callback {
-    padding-top: 5px;
-    padding-right: 12px;
-    text-align: right;
-
-    .tel-number {
-      color: #b8907b;
-      font-family: Ubuntu;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 35px;
-      text-transform: uppercase;
-      max-width: 180px;
-      max-height: 40px;
-      overflow: hidden;
-    }
-
-    a {
-      position: relative;
-      color: #485368;
-      font-family: Ubuntu;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 35px;
-      transition: color .3s ease-in-out;
-
-      &:before {
-        content: "";
-        position: absolute;
-        width: 20px;
-        height: 22px;
-        top: 0px;
-        left: -30px;
-        background: url('../img/icon-phone.svg') no-repeat;
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        color: #a07762;
-      }
-    }
-  }
-
-}
 }

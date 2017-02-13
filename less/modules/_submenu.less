@@ -1,44 +1,39 @@
 .submenu {
-.clearfix();
-  display: inline-block;
-  width: 67%;
-  padding-left: 17px;
-  margin-bottom: 45px;
-
-  &__list {
-    display: flex;
-    align-content: space-between;
-    justify-content: space-between;
-    flex-flow: wrap;
-  }
-
-  &__item {
-    flex-basis: 22%;
-
-    a {
-      position: relative;
-      color: #485368;
-      font-family: Ubuntu, sans-serif;
-      font-size: 16px;
-      font-weight: 300;
-      line-height: 26px;
-
-      &:before {
-        content: "";
-        position: absolute;
-        width: 8px;
-        height: 8px;
-        border: 2px solid #b8907b;
-        border-radius: 50%;
-        top: 5px;
-        left: -17px;
-      }
-
-      &:active,
-      &:hover,
-      &:focus {
-        color: #b8907b;
-      }
+    .clearfix();
+    display: inline-block;
+    width: 67%;
+    padding-left: 17px;
+    margin-bottom: 47px;
+    &__list {
+        display: flex;
+        align-content: space-between;
+        justify-content: space-between;
+        flex-flow: wrap;
     }
-  }
-  }
+    &__item {
+        flex-basis: 22%;
+        a {
+            position: relative;
+            color: #485368;
+            font-family: Ubuntu, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 26px;
+            &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                border: 2px solid #b8907b;
+                border-radius: 50%;
+                top: 5px;
+                left: -17px;
+            }
+            &:active,
+            &:hover,
+            &:focus {
+                color: #b8907b;
+            }
+        }
+    }
+}

@@ -8,12 +8,18 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/swiper.min.js"></script>
+    <script src="../js/jquery.mmenu.all.min.js"></script>
     <script src="../js/main.js"></script>
   </head>
 </html>
 <body>
   <header class="header">
     <div class="wrapper">
+      <div class="hamburger hamburger--spin">
+        <div class="hamburger-box">
+          <div class="hamburger-inner"></div>
+        </div>
+      </div>
       <div class="header-wrap">
         <div class="social header__social"><a href="#" class="social__link  social__link_yellow  social__vk"></a><a href="#" class="social__link  social__link_yellow  social__fb"></a><a href="#" class="social__link  social__link_yellow  social__tw"></a><a href="#" class="social__link  social__link_yellow  social__ok"></a></div>
         <div class="logo">
@@ -37,17 +43,25 @@
           <li class="nav__item"><a href="#" class="link">Блог</a></li>
           <li class="nav__item"><a href="#" class="link">Сотрудничество</a></li>
           <li class="nav__item"><a href="#" class="link">Контакты</a></li>
-          <li class="nav__item_empty"></li>
+          <li class="nav__item"></li>
         </ul>
       </div>
     </nav>
     <div class="slider">
       <div class="swiper-container first-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../img/pic1.png"></div>
-          <div class="swiper-slide"><img src="../img/pic1.jpg"></div>
-          <div class="swiper-slide"><img src="../img/pic1.png"></div>
-          <div class="swiper-slide"><img src="../img/pic1.jpg"></div>
+          <div class="swiper-slide"><img src="../img/pic1.png">
+            <div class="slider-info">
+              <div class="slider-info__title">discover</div>
+              <div class="slider-info__text">Мир, который вы никогда не видели</div>
+            </div>
+          </div>
+          <div class="swiper-slide"><img src="../img/pic1.jpg">
+            <div class="slider-info">
+              <div class="slider-info__title">discover2</div>
+              <div class="slider-info__text">Мир, который вы никогда не видели</div>
+            </div>
+          </div>
         </div>
         <!-- Add Arrows-->
         <div class="swiper-button-next"></div>
