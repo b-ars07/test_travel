@@ -4,14 +4,14 @@ block content
     .swiper-container.first-slider
       .swiper-wrapper
         .swiper-slide
-          img(src="../img/pic1.png")
+          .swiper-slide__img(style="background-image: url(../img/pic1.png)")
           .slider-info
               .slider-info__title
                 |discover
               .slider-info__text
                 |Мир, который вы никогда не видели
         .swiper-slide
-          img(src="../img/pic1.jpg")
+          .swiper-slide__img(src="../img/pic1.jpg")
           .slider-info
               .slider-info__title
                 |discover2
@@ -30,14 +30,15 @@ block content
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src="../img/car1.png")
+                  .effect-ming__img(style="background-image: url(../img/car1.png)")
+                  
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src="../img/car2.png")
+                  .effect-ming__img(style="background-image: url(../img/car2.png)")
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
@@ -45,47 +46,48 @@ block content
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src="../img/car3.png")
+                  .effect-ming__img(style="background-image: url(../img/car3.png)")
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src='http://placehold.it/350x234&text=FooBar4')
+                .effect-ming__img(style="background-image: url(http://placehold.it/350x234&text=FooBar4)")
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src='http://placehold.it/350x234&text=FooBar5')
+                  .effect-ming__img(style="background-image: url(http://placehold.it/350x234&text=FooBar5)")
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
             .swiper-slide
               .grid
                 figure.effect-ming
-                  img(src='http://placehold.it/350x234&text=FooBar6')
+                  .effect-ming__img(style="background-image: url(http://placehold.it/350x234&text=FooBar6)")
                   figcaption
                     p Парусный спорт в Стокгольме! Тебе понравится это!
                     a(href="#")
           .swiper-button-next
           .swiper-button-prev
-  .wrapper
-    include includes/_submenu.jade
-    .info
-      .article
-        .article__title  Travel
-        .article__description
-          .article__description_brief
+  
+  include includes/_submenu.jade
+  .info
+   .wrapper
+    .article
+      .article__title  Travel
+      .article__description
+        .article__description_brief
             |Новая Зеландия – ни что иное, как миниатюрная проекция нашего земного  шара, крохотные острова в юго-западной части Океании... Это место уже стало культовым среди туристов, бегущих от суеты мегаполисов. Новая Зеландия на своей небольшой территории помещает весь колорит планеты.
-          .article__description_full
+        .article__description_full
             |Здесь вы найдете бескрайние пляжи, традиционные деревушки, горные долины и большие города, тесно находящиеся друг с другом.
-        .article__button
-          a.btn.btn-primary(href="#") Подробнее
-      .info__img
-        img(src="../img/article.png", alt="alt")
+      .article__button
+        a.btn.btn-primary(href="#") Подробнее
+    .info__img
+      img(src="../img/article.png", alt="alt")
   .news
     .wrapper
       ul.news__list

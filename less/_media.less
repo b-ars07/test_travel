@@ -54,43 +54,256 @@
     }
 }
 @media (max-width: 960px) {
-    wrapper {
+    .wrapper {
         max-width: 100%;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .header {
         height: 60px;
-        padding-top: 20px;
+        padding: 0px;
+        .header-wrap {
+            padding-left: 20px;
+            padding-top: 21px;
+            padding-right: 0;
+        }
         &__social {
             display: none;
         }
         .callback {
-            display: none;
+            width: 15%;
+            .tel-number {
+                display: none;
+            }
+            .phone {
+                display: none;
+            }
+            .phone-icon {
+                display: inline-block!important;
+                vertical-align: top;
+                margin-top: 5px;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 22px;
+                    top: -11px;
+                    left: -29px;
+                    background: url('../img/icon-phone.svg') no-repeat;
+                }
+            }
         }
         .hamburger {
             display: inline-block;
             padding: 0;
             vertical-align: top;
             width: 10%;
-            .hamburger-box {
-                height: 0;
-            }
         }
         .logo {
             display: inline-block;
-            margin: 0 auto;
-            width: 70%;
-            text-align: center;
+            margin: 0px auto;
+            width: 100%;
             &__text {
                 display: none;
             }
             &__img {
+                display: inline-block!important;
+                vertical-align: top;
                 &_desktop {
                     display: none;
                 }
                 &_tablet {
                     display: block!important;
                 }
+            }
+        }
+    }
+    .nav {
+        display: none;
+    }
+    .swiper-slide {
+        &__img {
+            height: 54.17vw;
+        }
+        .slider-info {
+            top: 32%;
+        }
+    }
+    .swiper-button-prev {
+        left: 2.7%!important;
+    }
+    .swiper-button-next {
+        right: 2.7%!important;
+    }
+    .intro {
+        .carousel {
+            padding-top: 22px;
+            margin-bottom: 41px;
+        }
+    }
+    .grid {
+        figure {
+            .effect-ming__img {
+                width: 41.67vw;
+                height: 27.87vw;
+            }
+        }
+    }
+    .submenu {
+        display: block;
+        width: 100%;
+        padding-left: 36px;
+        margin-bottom: 38px;
+        &__item {
+            margin-bottom: 8px;
+        }
+    }
+    .info {
+        padding-left: 20px;
+        .article {
+            margin-bottom: 76px;
+            &__title {
+                font-size: 36px;
+                height: 65px;
+                margin-bottom: 0px;
+                &:after {
+                    bottom: 12px;
+                }
+            }
+            &__description {
+                margin-bottom: 34px;
+                &_brief {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                    margin-bottom: 26px;
+                }
+                &_full {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 24px;
+                }
+            }
+        }
+        &__img {
+            width: 320px;
+            height: 214px;
+            padding-right: 0px;
+            margin-top: 73px;
+            &:after {
+                width: 247px;
+                height: 368px;
+                top: -77px;
+                right: 37px;
+            }
+        }
+    }
+    .btn-primary {
+        padding: 6px 24px;
+    }
+    .btn-news {
+        padding: 6px 20px;
+        margin-left: -3px;
+    }
+    .news {
+        height: 318px;
+        padding: 41px 14px 0 19px;
+        &__list {
+            padding: 34px 0 55px 32px
+        }
+        .news-title {
+            margin-bottom: 27px;
+            line-height: 22px;
+            margin-left: -4px;
+        }
+        &__item:last-child {
+            display: none;
+        }
+        &__item:nth-child(2) {
+            margin-right: 50px;
+        }
+        &__title {
+            max-width: 208px;
+        }
+        &__button {
+            margin-top: -14px;
+        }
+    }
+    .page-wrap {
+        margin-bottom: -325px;
+    }
+    .footer,
+    .page-wrap:after {
+        height: 325px;
+    }
+    .footer {
+        height: 325px;
+        .footer-info {
+            padding-top: 55px;
+            margin-bottom: 45px;
+            &__social {
+                width: 50%;
+                padding-left: 21px;
+            }
+        }
+        .social {
+            &__link {
+                width: 63px;
+                height: 63px;
+                margin-right: 10px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+            &__vk {
+                background-size: 34px;
+                background-position: 48%;
+            }
+            &__fb {
+                background-size: 16px;
+                background-position: 48%;
+            }
+            &__tw {
+                background-size: 23px;
+                background-position: 45%;
+            }
+            &__ok {
+                background-size: 15px;
+                background-position: 45%;
+            }
+        }
+        .footer-nav {
+            width: 33%;
+            margin-left: 7px;
+            margin-top: -3px;
+            break-before: always;
+            .footer-column {
+                width: 53%;
+                height: 134px;
+                break-before: always;
+                column-count: 1;
+                .footer-link {
+                    height: 34px;
+                    break-before: always;
+                }
+            }
+        }
+        .about {
+            .copyright {
+                padding-left: 19px;
+                padding-top: 2px;
+                width: 37%;
+                max-width: 37%;
+            }
+            .addr {
+                line-height: 25px;
+                width: 30%;
+                margin-top: -10px;
+                padding-left: 2px;
+            }
+            .idpowers {
+                padding-right: 19px;
             }
         }
     }

@@ -8,10 +8,11 @@ $(function () {
         spaceBetween: 30,
         loop: true,
         autoHeight: true,
-        autoplay: 7000,
+        //        autoplay: 7000,
         effect: 'fade'
 
     });
+
 
     var carousel = new Swiper('.slider1', {
         nextButton: '.swiper-button-next',
@@ -25,7 +26,7 @@ $(function () {
                 spaceBetween: 20
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 2.33,
                 spaceBetween: 20
             },
             640: {

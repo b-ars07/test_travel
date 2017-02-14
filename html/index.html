@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
@@ -15,19 +15,19 @@
 <body>
   <header class="header">
     <div class="wrapper">
-      <div class="hamburger hamburger--spin">
-        <div class="hamburger-box">
-          <div class="hamburger-inner"></div>
-        </div>
-      </div>
       <div class="header-wrap">
+        <div class="hamburger hamburger--spin">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
         <div class="social header__social"><a href="#" class="social__link  social__link_yellow  social__vk"></a><a href="#" class="social__link  social__link_yellow  social__fb"></a><a href="#" class="social__link  social__link_yellow  social__tw"></a><a href="#" class="social__link  social__link_yellow  social__ok"></a></div>
         <div class="logo">
-          <div class="logo__img"><a href="#"><img src="../img/logo.png"></a></div>
+          <div class="logo__img"><a href="#"><img src="../img/logo.png" class="logo__img_desktop"><img src="../img/logo768.png" class="logo__img_tablet"></a></div>
           <div class="logo__text">Мир, который Вы никогда не видели</div>
         </div>
         <div class="callback">
-          <div class="tel-number">+7 (495) 397-00-78</div><a href="#callback">Обратный звонок</a>
+          <div class="tel-number">+7 (495) 397-00-78</div><a href="#callback" class="phone">Обратный звонок</a><a href="#callback" class="phone-icon"></a>
         </div>
       </div>
     </div>
@@ -50,13 +50,15 @@
     <div class="slider">
       <div class="swiper-container first-slider">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../img/pic1.png">
+          <div class="swiper-slide">
+            <div style="background-image: url(../img/pic1.png)" class="swiper-slide__img"></div>
             <div class="slider-info">
               <div class="slider-info__title">discover</div>
               <div class="slider-info__text">Мир, который вы никогда не видели</div>
             </div>
           </div>
-          <div class="swiper-slide"><img src="../img/pic1.jpg">
+          <div class="swiper-slide">
+            <div src="../img/pic1.jpg" class="swiper-slide__img"></div>
             <div class="slider-info">
               <div class="slider-info__title">discover2</div>
               <div class="slider-info__text">Мир, который вы никогда не видели</div>
@@ -75,7 +77,8 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="grid">
-                  <figure class="effect-ming"><img src="../img/car1.png">
+                  <figure class="effect-ming">
+                    <div style="background-image: url(../img/car1.png)" class="effect-ming__img"></div>
                     <figcaption>
                       <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
                     </figcaption>
@@ -84,7 +87,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="grid">
-                  <figure class="effect-ming"><img src="../img/car2.png">
+                  <figure class="effect-ming">
+                    <div style="background-image: url(../img/car2.png)" class="effect-ming__img"></div>
                     <figcaption>
                       <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
                     </figcaption>
@@ -93,7 +97,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="grid">
-                  <figure class="effect-ming"><img src="../img/car3.png">
+                  <figure class="effect-ming">
+                    <div style="background-image: url(../img/car3.png)" class="effect-ming__img"></div>
                     <figcaption>
                       <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
                     </figcaption>
@@ -102,7 +107,18 @@
               </div>
               <div class="swiper-slide">
                 <div class="grid">
-                  <figure class="effect-ming"><img src="http://placehold.it/350x234&amp;text=FooBar4">
+                  <figure class="effect-ming"></figure>
+                  <div style="background-image: url(http://placehold.it/350x234&amp;text=FooBar4)" class="effect-ming__img">
+                    <figcaption>
+                      <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
+                    </figcaption>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid">
+                  <figure class="effect-ming">
+                    <div style="background-image: url(http://placehold.it/350x234&amp;text=FooBar5)" class="effect-ming__img"></div>
                     <figcaption>
                       <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
                     </figcaption>
@@ -111,16 +127,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="grid">
-                  <figure class="effect-ming"><img src="http://placehold.it/350x234&amp;text=FooBar5">
-                    <figcaption>
-                      <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="grid">
-                  <figure class="effect-ming"><img src="http://placehold.it/350x234&amp;text=FooBar6">
+                  <figure class="effect-ming">
+                    <div style="background-image: url(http://placehold.it/350x234&amp;text=FooBar6)" class="effect-ming__img"></div>
                     <figcaption>
                       <p>Парусный спорт в Стокгольме! Тебе понравится это!</p><a href="#"></a>
                     </figcaption>
@@ -134,20 +142,24 @@
         </div>
       </div>
     </div>
-    <div class="wrapper">
-      <div class="submenu">
-        <ul class="submenu__list">
-          <li class="submenu__item"><a href="#">Австрия</a></li>
-          <li class="submenu__item"><a href="#">Бельгия</a></li>
-          <li class="submenu__item"><a href="#">Бразилия</a></li>
-          <li class="submenu__item"><a href="#">Венгрия</a></li>
-          <li class="submenu__item"> <a href="#">Белоруссия</a></li>
-          <li class="submenu__item"><a href="#">Болгария</a></li>
-          <li class="submenu__item"><a href="#">Великобритания</a></li>
-          <li class="submenu__item"><a href="#">Вьетнам</a></li>
-        </ul>
+    <div class="menu">
+      <div class="wrapper">
+        <div class="submenu">
+          <ul class="submenu__list">
+            <li class="submenu__item"><a href="#">Австрия</a></li>
+            <li class="submenu__item"><a href="#">Бельгия</a></li>
+            <li class="submenu__item"><a href="#">Бразилия</a></li>
+            <li class="submenu__item"><a href="#">Венгрия</a></li>
+            <li class="submenu__item"> <a href="#">Белоруссия</a></li>
+            <li class="submenu__item"><a href="#">Болгария</a></li>
+            <li class="submenu__item"><a href="#">Великобритания</a></li>
+            <li class="submenu__item"><a href="#">Вьетнам</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="info">
+    </div>
+    <div class="info">
+      <div class="wrapper">
         <div class="article">
           <div class="article__title"> Travel</div>
           <div class="article__description">
@@ -182,19 +194,7 @@
       <div class="footer-info">
         <div class="social footer-info__social"><a href="#" class="social__link  social__link_gray  social__vk"></a><a href="#" class="social__link  social__link_gray  social__fb"></a><a href="#" class="social__link  social__link_gray  social__tw"></a><a href="#" class="social__link  social__link_gray  social__ok"></a></div>
         <div class="footer-nav">
-          <div class="footer-column footer-column1">
-            <p><a href="#" class="footer-link">Главная</a></p>
-            <p><a href="#" class="footer-link">О проекте</a></p>
-            <p><a href="#" class="footer-link">Туры</a></p>
-          </div>
-          <div class="footer-column footer-column2">
-            <p><a href="#" class="footer-link">Страны</a></p>
-            <p><a href="#" class="footer-link">Блог</a></p>
-            <p><a href="#" class="footer-link">Сотрудничество</a></p>
-          </div>
-          <div class="footer-column footer-column3">
-            <p><a href="#" class="footer-link">Контакты</a></p>
-          </div>
+          <div class="footer-column"><a href="#" class="footer-link">Главная</a><a href="#" class="footer-link">О проекте</a><a href="#" class="footer-link">Туры</a><a href="#" class="footer-link">Страны</a><a href="#" class="footer-link">Блог</a><a href="#" class="footer-link">Сотрудничество</a><a href="#" class="footer-link">Контакты</a></div>
         </div>
       </div>
       <div class="about">
