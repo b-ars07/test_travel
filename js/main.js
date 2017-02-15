@@ -21,34 +21,36 @@ $(function () {
         spaceBetween: 33,
         loop: true,
         breakpoints: {
-            1024: {
-                slidesPerView: 3,
+
+            960: {
+                slidesPerView: 2.63,
                 spaceBetween: 20
             },
             768: {
                 slidesPerView: 2.33,
                 spaceBetween: 20
             },
-            640: {
-                slidesPerView: 1,
+            510: {
+                slidesPerView: 2.1,
                 spaceBetween: 20
             },
-            320: {
-                slidesPerView: 1,
+            480: {
+                slidesPerView: 1.4,
                 spaceBetween: 10
             }
         }
     });
 
-    var mobilemenu = $('.mobilenav');
 
     $(".icon").click(function () {
-        $(".mobilenav").stop().fadeToggle(500);
+//        $('.nav').toggleClass('menu-mob');
+        $(".mobilenav").stop().fadeToggle();
         $(".top-menu").toggleClass("top-animate");
         $(".mid-menu").toggleClass("mid-animate");
         $(".bottom-menu").toggleClass("bottom-animate");
 
     });
+
 
 
 });
