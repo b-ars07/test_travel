@@ -40,29 +40,15 @@ $(function () {
         }
     });
 
-    //    var $hamburger = $(".hamburger");
-    //    $hamburger.on("click", function (e) {
-    //        $hamburger.toggleClass("is-active");
-    //        $('.page-block').toggleClass('menu-tab');
-    //    });
+    var mobilemenu = $('.mobilenav');
 
     $(".icon").click(function () {
-        $(".mobilenav").fadeToggle(500);
+        $(".mobilenav").stop().fadeToggle(500);
         $(".top-menu").toggleClass("top-animate");
         $(".mid-menu").toggleClass("mid-animate");
         $(".bottom-menu").toggleClass("bottom-animate");
 
-        var mobilemenu = document.querySelector('.mobilenav');
-
-        if (mobilemenu.style.display === 'block') {
-            $('.header').css({
-                'position': 'fixed',
-                'width': '100%'
-            });
-        }
     });
-
-
 
 
 });
