@@ -54,6 +54,9 @@
     }
 }
 @media (max-width: 960px) {
+    .slider-info__title {
+        margin-bottom: 13px;
+    }
     .wrapper {
         max-width: 100%;
         width: 100%;
@@ -63,6 +66,9 @@
     .header {
         height: 60px;
         padding: 0px;
+        position: relative;
+        z-index: 9999;
+        background-color: #fff;
         .header-wrap {
             padding-left: 20px;
             padding-top: 21px;
@@ -94,16 +100,11 @@
                 }
             }
         }
-        .hamburger {
-            display: inline-block;
-            padding: 0;
-            vertical-align: top;
-            width: 10%;
-        }
         .logo {
             display: inline-block;
             margin: 0px auto;
             width: 100%;
+            padding-left: 53px!important;
             &__text {
                 display: none;
             }
@@ -121,6 +122,9 @@
     }
     .nav {
         display: none;
+    }
+    .menu-mob {
+        display: block
     }
     .swiper-slide {
         &__img {

@@ -1,46 +1,45 @@
 body,
 html {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  background: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: #fff;
 }
-
-*, *:after, *:before {
-box-sizing: border-box;
-padding: 0;
-margin: 0;
-
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
-
 html {
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
 }
-
 .page-wrap {
     min-height: 100%;
     margin-bottom: -280px;
-
     &:after {
         content: "";
         display: block;
     }
 }
-
+.menu-tab {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
 .footer,
 .page-wrap:after {
     height: 280px;
 }
-
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
-
 p,
 a,
 span,
@@ -52,113 +51,96 @@ small,
 input,
 label,
 textarea,
-h1,h2,h3,h4,h5,h6 {
-	font-family: 'Ubuntu', 'Arial', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Ubuntu', 'Arial', sans-serif;
     font-size: 16px;
 }
-
 ul {
-  list-style: none;
-  margin: 0 auto;
+    list-style: none;
+    margin: 0 auto;
 }
-
 a {
     text-decoration: none;
     outline: none;
 }
-
 .wrapper {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 25px;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 25px;
 }
-
 .btn {
-  border: 2px solid #485368;
-  border-radius: 30px;
-  background: transparent;
-  padding: 9px 32px;
-  color: #485368;
-  font-family: Ubuntu,sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  transition: color .3s ease-in-out;
-
-  &:hover {
-    color: lighten(#485368, 30%);
-  }
+    border: 2px solid #485368;
+    border-radius: 30px;
+    background: transparent;
+    padding: 9px 32px;
+    color: #485368;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    transition: color .3s ease-in-out;
+    &:hover {
+        color: lighten(#485368, 30%);
+    }
 }
-
 .btn-primary {
-  transition: all .3s ease-in-out;
-  &:hover {
-    border-color: lighten(#485368, 30%);
-  }
+    transition: all .3s ease-in-out;
+    &:hover {
+        border-color: lighten(#485368, 30%);
+    }
 }
-
 .btn-news {
-  border: 2px solid #ffffff;
-  background-color: #f5f5f5;
-  transition: all .3s ease-in-out;
-  padding: 9px 28px;
-  margin-left: -7px;
-
-  &:hover {
-    border-color: #485368;
-  }
+    border: 2px solid #ffffff;
+    background-color: #f5f5f5;
+    transition: all .3s ease-in-out;
+    padding: 9px 28px;
+    margin-left: -7px;
+    &:hover {
+        border-color: #485368;
+    }
 }
-
 .social {
-  display: flex;
-  padding-top: 3px;
-
-  &__link {
-    margin-right: 6px;
-    width: 36px;
-    height: 36px;
-
-    &_yellow {
-      background-color: #d6ae9a;
+    display: flex;
+    padding-top: 3px;
+    &__link {
+        margin-right: 6px;
+        width: 36px;
+        height: 36px;
+        &_yellow {
+            background-color: #d6ae9a;
+        }
+        &_gray {
+            background-color: #667085;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
     }
-
-    &_gray {
-      background-color: #667085;
+    &__vk {
+        background-image: url('../img/vk.svg');
+        background-repeat: no-repeat;
+        background-position: center;
     }
-
-
-
-    &:last-child {
-      margin-right: 0;
+    &__fb {
+        background-image: url('../img/fb.svg');
+        background-repeat: no-repeat;
+        background-position: center;
     }
-  }
-
-  &__vk {
-    background-image: url('../img/vk.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__fb {
-    background-image: url('../img/fb.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__tw {
-    background-image: url('../img/tw.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  &__ok {
-    background-image: url('../img/ok.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+    &__tw {
+        background-image: url('../img/tw.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__ok {
+        background-image: url('../img/ok.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
-
-.swiper-slide{
-    
-}
+.swiper-slide {}
