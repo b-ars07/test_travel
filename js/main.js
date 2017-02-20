@@ -37,13 +37,17 @@ $(function () {
             480: {
                 slidesPerView: 1.4,
                 spaceBetween: 10
+            },
+            320: {
+                slidesPerView: 1.5,
+                spaceBetween: 10
             }
         }
     });
 
 
     $(".icon").click(function () {
-//        $('.nav').toggleClass('menu-mob');
+        //        $('.nav').toggleClass('menu-mob');
         $(".mobilenav").stop().fadeToggle();
         $(".top-menu").toggleClass("top-animate");
         $(".mid-menu").toggleClass("mid-animate");
