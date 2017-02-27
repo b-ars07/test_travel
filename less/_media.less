@@ -31,7 +31,15 @@
         }
     }
 }
+@media (min-width: 1170px) {
+    .mobilenav li {
+        padding: 0px 0px 0px 65px;
+    }
+}
 @media (min-width: 960px) {
+    .mobilenav li {
+        padding: 0px 0px 0px 15px;
+    }
     .nav {
         &__list {
             display: flex!important;
@@ -39,6 +47,17 @@
     }
     .mobilenav li:first-child {
         margin-top: 0px;
+    }
+    .swiper-slide__img {
+        height: 39.25vw;
+    }
+    .swiper-button-prev {
+        left: 13.3%;
+        margin-top: -19px;
+    }
+    .swiper-button-next {
+        right: 13.8%;
+        margin-top: -20px;
     }
 }
 @media screen and (max-width: 1060px) and (-webkit-device-pixel-ratio: 2) {
@@ -63,6 +82,14 @@
         }
     }
 }
+
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+    .grid figure .effect-ming__img {
+        width: 29vw;
+        height: 19vw;
+    }
+}
+
 @media screen and (max-width: 960px) and (-webkit-device-pixel-ratio: 2) {
     .header-fixed {
         position: fixed;
@@ -411,6 +438,39 @@
 //        }
 //    }
 //}
+
+@media screen and (-webkit-device-pixel-ratio: 2) and (max-width: 960px) and (min-width: 770px) {
+    .grid figure .effect-ming__img {
+         width: 36.67vw;
+         height: 23.87vw;
+
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) and (max-width: 769px) and (min-width: 520px) {
+    .grid figure .effect-ming__img {
+         width: 40.67vw;
+         height: 23.87vw;
+
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) and (max-width: 520px) and (min-width: 480px) {
+    .grid figure .effect-ming__img {
+         width: 43.67vw;
+         height: 28.87vw;
+
+    }
+}
+
+@media screen and (-webkit-device-pixel-ratio: 2) and (max-width: 480px) and (min-width: 320px) {
+    .grid figure .effect-ming__img {
+         width: 65.67vw;
+         height: 42.87vw;
+
+    }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 2) {
     .header .header-wrap .logo {
         padding-left: 0;
@@ -441,10 +501,7 @@
     .intro .carousel {
         padding-top: 9px;
     }
-    .grid figure .effect-ming__img {
-        width: 65.67vw;
-        height: 27.5vh;
-    }
+
     .intro .carousel .swiper-button-prev {
         left: 0.4%!important;
     }
@@ -497,10 +554,12 @@
         margin-right: 0;
     }
     .news .news-title {
-        margin-bottom: 39px;
+        margin-bottom: 33px;
+        margin-left: -1px;
+        padding-top: 5px;
     }
     .news__list {
-        padding: 34px 0 55px 29px;
+        padding: 34px 0 47px 29px;
     }
     .news__title {
         max-width: 228px;
@@ -538,5 +597,30 @@
     }
     .footer .footer-info__social {
         padding-left: 22px;
+    }
+    
+    .footer .about {
+        display: block;
+    }
+    
+    .footer .about .copyright {
+        position: relative;
+        top: 74px;
+        left: 1px;
+        float: left;
+    }
+    
+    .footer .about .addr {
+        width: 100%;
+        max-width: 77%;
+        position: relative;
+        top: -46px;
+        left: 18px;
+    }
+    
+    .footer .about .idpowers {
+        float: right;
+        top: -2px;
+        left: 0px;
     }
 }

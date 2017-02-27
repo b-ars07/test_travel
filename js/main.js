@@ -22,6 +22,10 @@ $(function () {
         loop: true,
         breakpoints: {
 
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            },
             960: {
                 slidesPerView: 2.63,
                 spaceBetween: 20
@@ -30,12 +34,8 @@ $(function () {
                 slidesPerView: 2.33,
                 spaceBetween: 20
             },
-            510: {
-                slidesPerView: 2.1,
-                spaceBetween: 20
-            },
             480: {
-                slidesPerView: 1.4,
+                slidesPerView: 1.5,
                 spaceBetween: 10
             },
             320: {
